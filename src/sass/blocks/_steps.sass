@@ -1,0 +1,131 @@
+.steps
+  padding-top: 54px
+  padding-bottom: 93px
+  &__title
+    max-width: 670px
+    text-align: center
+    margin: 0 auto
+    margin-bottom: 49px
+  &__subtitle
+    display: block
+    text-align: center
+    margin: 0 auto
+    margin-bottom: 68px
+  &-list
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    &__item
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      position: relative
+      &:nth-child(1)
+        margin-left: -6px
+      &:nth-child(2)
+        margin-left: -14px
+      &:nth-child(3)
+        margin-left: -10px
+        .steps-list__arrow
+          right: -84px
+      &:nth-child(4)
+        margin-left: -11px
+        .steps-list__arrow
+          right: -76px
+      &:nth-child(5)
+        margin-left: -7px
+    &__text
+      text-align: center
+      font-size: 14px
+      line-height: 20px
+    &__img
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100px
+      height: 100px
+      margin-bottom: 28px
+      border: 3px solid #ffd200
+      border-radius: 50%
+    &__arrow
+      position: absolute
+      top: -11px
+      right: -80px
+@media (max-width: 1200px) 
+  .steps
+    &-list
+      &__item
+        &:nth-child(3)
+          .steps-list__arrow
+            right: -60px
+        &:nth-child(4)
+          .steps-list__arrow
+            right: -58px    
+      &__arrow
+        right: -60px
+@media (max-width: 992px)
+  .steps
+    &-list
+      justify-content: space-between
+      &__item
+        width: 50%
+        margin-bottom: 20px
+        &:nth-child(5)
+          margin: 0 auto
+      &__arrow
+        display: none
+@media (max-width: 768px)
+  .steps
+    &-list
+      flex-direction: column
+      align-items: center
+      &__item
+        margin: 0
+        margin-bottom: 30px
+        &:nth-child(5)
+          margin: 0 
+      &__img
+        margin-bottom: 22px
+    &__title
+      font-size: 18px
+      line-height: 22px
+      margin-bottom: 27px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 34px
+@media (max-width: 320px)
+  .steps
+    padding-top: 10px
+    padding-bottom: 75px
+    &__title
+      margin-bottom: 19px
+    &__subtitle
+      margin-bottom: 30px
+    &-list
+      &__item
+        &:nth-child(1)
+          margin-left: 0.5px
+        &:nth-child(2)
+          margin-left: 2px
+          .steps-list__img
+            margin-bottom: 28px
+        &:nth-child(3)
+          margin-left: 0.5px
+          margin-top: -1px
+          .steps-list__img
+            margin-bottom: 28px
+        &:nth-child(4)
+          margin-left: 1px
+          margin-top: -3px
+          .steps-list__img
+            margin-bottom: 28px
+        &:nth-child(5)
+          margin-top: -3px
+          .steps-list__img
+            margin-bottom: 28px
+      &__img
+        margin-bottom: 18px
+      &__text
+        font-size: 12px
+        line-height: 16px

@@ -1,0 +1,151 @@
+.offer
+  background: url('../img/offer/offer-bg.jpg') no-repeat
+  background-size: contain
+  background-position: right center
+  position: relative
+  padding-top: 66px
+  padding-bottom: 88px
+  &::before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #fff
+  &-block
+    position: relative
+    width: 50%
+    padding-right: 90px
+  &__title
+    margin-top: 9px
+    margin-bottom: 18px
+    max-width: 350px
+
+    font-size: 24px
+    line-height: 35px
+    color: #333333
+  &__subtitle
+    display: block
+    max-width: 280px
+    margin-bottom: 29px
+
+    font-size: 16px
+    line-height: 20px
+  &__input
+    width: 240px
+    margin-bottom: 31px
+  &__btn
+    width: 100%
+    margin-bottom: 25px
+    font-size: 16px
+    line-height: 18px
+    +bold
+    padding-top: 25px
+    padding-bottom: 27px
+  &__info-manager
+    display: flex
+    justify-content: space-between
+    font-size: 15px
+    line-height: 24px
+  &__contact
+    width: 50%
+    display: flex
+    flex-direction: column
+    padding-left: 49px
+  &__info
+    width: 50%
+  &__phone
+    a
+      text-decoration: none
+      color: $text-color
+      +bold
+.offer  .input-group
+  display: inline-block
+  &:first-child
+    margin-right: 11px
+.offer div.invalid
+    top: 40px
+    right: 20px
+@media (max-width: 1200px)
+  .offer  .input-group
+    display: block
+    &:first-child
+      margin-right: 0
+  .offer div.invalid
+    top: 40px
+    right: 20px
+
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__btn
+      padding: 23px 40px
+@media (max-width: 992px)
+  .offer
+    &__info-manager
+      flex-direction: column
+    &__contact
+      width: 100%
+      padding: 0
+    &__info
+      width: 100%
+      margin-bottom: 10px
+    &__btn
+      padding: 14px 40px
+@media (max-width: 768px)
+  .offer
+    background: #ffffff
+    &__info-manager
+      margin-left: 5px
+      text-align: center
+    &__info
+      margin-bottom: 6px
+    &-block
+      width: 100%
+      padding: 0
+    &__title
+      margin-bottom: 16px
+      line-height: 22px
+      max-width: 100%
+    &__subtitle
+      margin-bottom: 26px
+      line-height: 18px
+      max-width: 100%
+    &__btn
+      padding: 23px 40px
+      margin-bottom: 22px
+      font-size: 14px
+      border-radius: 10px
+      line-height: 17px
+    &__input
+      padding: 19px 26px
+      margin-bottom: 9px
+@media (max-width: 420px)
+  .offer 
+    &__btn
+      padding: 15px 50px
+@media (max-width: 320px)
+  .section
+    padding-top: 39px
+  .offer
+    padding-top: 41px
+    padding-bottom: 51px
+    &__title
+      max-width: 98%
+      font-size: 18px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 24px
+    &__input
+      margin-bottom: 9px
+    &__btn
+      margin-top: 3px
+      margin-bottom: 22px
+      padding: 15px 40px 20px 40px
+    &__info-manager
+      max-width: 84%
+      text-align: left    

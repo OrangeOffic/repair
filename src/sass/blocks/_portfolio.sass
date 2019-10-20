@@ -1,0 +1,44 @@
+.portfolio
+  background: $secondary url('../img/portfolio/bg-portfolio.jpg') repeat-y center left
+  background-size: 50%
+
+  padding-top: 90px
+  padding-bottom: 92px
+  &__title
+    margin: auto
+    margin-bottom: 92px
+
+    text-align: center
+    font-size: 30px
+    line-height: 45px
+@media (max-width: 768px)
+  .portfolio
+    padding-top: 41px
+    padding-bottom: 56px
+    &__title
+      font-size: 18px
+      line-height: 22px
+      margin-bottom: 38px
+  .arrow
+    margin-top: 46px
+  .slider
+    &__image
+      width: 246px
+.slider
+  &__item
+    &:focus
+      outline: none
+  &__image
+    margin: auto    
+.arrow
+  width: 120px
+  margin: 0 auto
+  margin-top: 70px
+  display: flex
+  justify-content: space-between
+  &-left, &-right
+    &:hover
+      cursor: pointer
+@media (max-width: 320px)
+  .arrow
+    margin-top: 46px

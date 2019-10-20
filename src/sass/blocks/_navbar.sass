@@ -1,0 +1,52 @@
+.navbar
+  background-color: $navbar-color
+  padding: 6px 0 2px 0
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__info
+    display: flex
+    align-items: flex-start
+  &__contact
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-end
+    line-height: 20px
+  &__phone
+    a
+      font-size: 20px
+      +bold
+      line-height: 28px
+      text-decoration: none
+      color: $text-color
+  &__adress
+    font-size: 13px
+  &__button
+    margin-left: 30px
+    margin-bottom: 8px
+    border-radius: 5px
+  &__logo
+    img
+      max-width: 100%
+
+@media (max-width: 420px)
+  .navbar
+    padding: 17px 0
+    &__logo
+      width: 91px
+@media (max-width: 320px)
+  .navbar__logo
+    width: 91px
+  .navbar-block
+    align-items: flex-start
+  .navbar__button
+    margin-top: 1px
+@media (max-width: 768px)
+  .navbar
+    padding-bottom: 10px 
+    &__contact
+      display: none
+    &__button
+      margin-right: 2px

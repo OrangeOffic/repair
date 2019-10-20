@@ -1,0 +1,101 @@
+footer
+  position: relative
+  padding-top: 70px
+.map
+  position: absolute
+  top: 0
+  left: 0
+
+  width: 50%
+.contact
+  width: 50%
+  margin-right: 0
+  margin-left: auto
+  padding-left: 215px
+  &__title
+    max-width: 300px
+    margin-bottom: 94px
+    font-size: 22px
+    line-height: 33px
+    +bold
+    color: black
+  &-list
+    padding: 0
+    color: black
+    &__text
+      margin-top: -8px
+
+      font-size: 16px
+      line-height: 26px
+    &__item
+      display: flex
+      margin-bottom: 40px
+      &:nth-child(2)
+        margin-bottom: 36px
+    &__icon
+      width: 20px
+      margin-right: 22px
+    &__phone
+      text-decoration: none
+      color: black
+      &:hover
+        cursor: pointer
+@media (max-width: 1200px)
+  .contact
+    padding-left: 115px
+@media (max-width: 768px)
+  footer
+    padding: 0
+  .contact
+    padding-left: 0
+    padding-top: 67px
+    padding-bottom: 64px
+    width: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title
+      max-width: 100%
+      margin-bottom: 40px
+      font-size: 18px
+      line-height: 25.35px
+      text-align: center
+    &-list
+      &__text
+        font-size: 16px
+        line-height: 22px
+  .map
+    position: relative
+    width: 100%
+@media (max-width: 320px)
+  .contact
+    padding-top: 45px
+    padding-bottom: 6px
+    align-items: flex-start
+    &__title
+      max-width: 100%
+      text-align: left
+      line-height: 22px
+      margin-bottom: 23px
+      margin-left: 4px
+      +bold
+    &-list
+      margin-left: 3px
+      &__icon
+        margin-right: 10px
+      &__text
+        margin-top: -3px
+        line-height: 24px
+      &__item:nth-child(1)
+        margin-bottom: 38px
+      &__item:nth-child(2)
+        .contact-list__icon
+          margin-left: -2px
+          margin-right: 12px
+      &__item:nth-child(3)
+        .contact-list__icon
+          margin-left: -2px
+          margin-right: 12px
+        .contact-list__text
+          margin-top: -5px
+        
